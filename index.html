@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing page</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">Acme Inc.</a>
+      </div>
+      <button class="menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="menu-icon"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-item">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#services" class="nav-item">Services</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      <div class="cta-button">
+        <a href="#get-started">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <h1>Welcome to Acme Inc.</h1>
+      <p>Discover the best products and services for your business.</p>
+      <div class="cta-buttons">
+        <a href="#get-started" class="btn-get-started">Get Started</a>
+        <a href="#learn-more" class="btn-learn-more">Learn More</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Learn more about our company and our mission.</p>
+      <div class="about-container">
+        <div class="about-column">
+          <h3>Our Story</h3>
+          <p>
+            Acme Inc. was founded in 2010 with the goal of providing innovative solutions to our customers. 
+            Over the years, we've grown to become a leading provider of cutting-edge technology and services.
+          </p>
+        </div>
+        <div class="about-column">
+          <h3>Our Mission</h3>
+          <p>
+            Our mission is to empower our customers with the tools and resources they need to succeed. 
+            We are committed to delivering exceptional products and services that help our clients achieve their goals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="services-container">
+        <h2>Our Services</h2>
+        <p>Explore our wide range of services to meet your business needs.</p>
+        <div class="service-cards">
+          <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Our team of experts will create a custom website tailored to your business needs.</p>
+            <a href="#web-development" class="learn-more">Learn More <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <div class="service-card">
+            <h3>Digital Marketing</h3>
+            <p>Our digital marketing strategies will help you reach your target audience and grow your business.</p>
+            <a href="#digital-marketing" class="learn-more">Learn More <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <div class="service-card">
+            <h3>Branding</h3>
+            <p>We'll help you create a strong brand identity that resonates with your customers.</p>
+            <a href="#branding" class="learn-more">Learn More <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch with our team to learn more.</p>
+      <form action="#" method="POST">
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="message" class="sr-only">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Acme Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>
